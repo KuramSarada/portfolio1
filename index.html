@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="width=device-width,intial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <style>
+     *{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none ;
+    margin:20px 0px;
+}
+.navbar ul li{font-family: cursive;
+font-size: 1.1rem;
+ font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color: white;
+    padding:8px 25px;
+    transition: all .5s ease;
+}
+navbar ul li a:hover{
+    background-color:black;
+    color:black;
+    box-shadow: 0 0 5px white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: url(https://res.cloudinary.com/dchrs0bls/image/upload/v1652536582/htmlportfolio_l8ecjj.jpg) no-repeat center center/cover;
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.headings{
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    text-align: center;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: greenyellow;
+    color: antiquewhite;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-style: italic;
+    transition: .5s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    column-rule-color: blueviolet;
+    box-shadow: 0 0 5px white;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: aqua;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 50%;
+    height: 420px;
+}
+#intro{
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: thistle;
+}
+.gallery{
+    display: flex;
+}
+.gallery img{
+    width:25%;
+    height: 300px;
+    padding: 5px;
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;;
+    align-items: center;
+    background-color: pink;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.box{
+    display: flex;
+flex-direction: column;
+width:200px;
+height: 360px;
+border:2px solid black;
+margin: 10px;
+align-items: center;
+text-align: justify;
+padding:10px;
+border-radius:15px ;
+background-color: linear-gradient(to top rgb (225,45,45) 50%,white 50%);
+background-size: 100% 200%;
+transition: all .10s;
+}
+.box:hover{
+    background-color: red;
+    color: white;
+    border: none;
+    background-position: left bottom;
+
+}
+.box img{
+    width: 80px;
+    height: 70px;
+    background-color: white;
+    padding:5px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: white;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 15px;
+    margin: 15px;
+    width: 45%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 25%;
+    padding: 10px;
+    margin: 15px;
+    outline: none;
+    border: none;
+}
+#send{
+    padding: 2px;
+    width:10%;
+    margin: 40px;
+    outline: none;
+    border-radius: 5px;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+ </style>
+ <body>
+     <nav class="navbar">
+         <ul>
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About Me</a></li>
+             <li><a href="#portfolio">Portfolio</a></li>
+             <li><a href="#skills">My skills</a></li>
+             <li><a href="#contact">Contact Me</a></li>
+         </ul>
+         </nav>
+         <section id="home">
+             <div class="main">
+                 <h1 class="headings">I am <br>Kuram Sarada</h1>
+                 <button class="btn"><a href="https://studentinfo.ap.gov.in/">Student</a></button>
+             </div>
+         </section> <br><br><br><br>
+         
+        <section id="about">
+            <h1 class="headings" style="font-size: 35px;">ABOUT ME</h1>
+            <div id="pic">
+             <img src="https://res.cloudinary.com/dchrs0bls/image/upload/v1652463246/SARA_il6467.jpg" alt="SARADA">
+            <div id="intro">
+                <h2>Kuram Sarada</h2>
+                <p>Hellow Everyone!!!<br>I am Sarada.I'm from Illuru Kothapeta kurnool district.
+                    I am currently pursuing my B.Tech first year in Computer Science and Engineering
+                    (CSE) at VIT-AP University.Basically I'm interested in exploring new things and 
+                    applying them practically.<br>
+                    <h4>My strengths :</h4>
+                    Creative thinking,hard working,accepting the failures and learning from failures.
+                    <h4>My hobbies:</h4> 
+                    Watching movies,listening music,playing shuttle and reading books<br>
+                    I would like to spend most of the time with my family members.
+                    I am very happy to be a part of CSI club and waiting for learning more 
+                    interesting things through this club
+                </p>
+            </div></div>
+        </section>
+        <section id="portfolio">
+            <h1 class="headings" style="font-size: 35px;">PORTFOLIO</h1>
+            <div class="gallery">
+                <img src="https://res.cloudinary.com/dchrs0bls/image/upload/v1652462527/cld-sample.jpg"> 
+                <img src="https://res.cloudinary.com/dchrs0bls/image/upload/v1652462499/sample.jpg">            
+                <img src="https://res.cloudinary.com/dchrs0bls/image/upload/v1652549058/download_tikymx.jpg">            
+                <img src="https://res.cloudinary.com/dchrs0bls/image/upload/v1652549069/download_6_l4gffl.jpg">            </div>
+
+             </div>
+        </section><br>
+        <section id="skills" style="text-align: center;">
+            <h1 class="headings" style="font-size: 30px;color:darkslateblue">MY SKILLS</h1>
+            <div class="row">
+                <div class="box">
+                    <img src="https://res.cloudinary.com/dchrs0bls/image/upload/v1652585814/skill_image_xaagmv.jpg">
+                    <h2>My skills</h2><br><br>
+                    <p>I have good communication skills.I have both technical and practical knowledge.
+                        I'm aware of HTML and CSS.I'm learning C programming and java.I have learnt python.I have knowledgein MS Office
+                    </p>
+                </div>
+            </div>
+           
+        </section><br>
+<section id="contant" style="background-color: black;">
+    <h1 class="headings" style="color: white;font-size:30px">CONTACT ME</h1>
+    <form action="" class="form">
+        <input type="text" name="name" class="input" placeholder="Enter your name">
+        <input type="email" name="Email" class="input" placeholder=" Enter your email">
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="enter your message"></textarea>
+        <input type="submit" value="Send" id="send">
+  </form></section>
+
+            
+
+        </body>
+ </html>
